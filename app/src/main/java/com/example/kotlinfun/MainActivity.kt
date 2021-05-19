@@ -14,12 +14,13 @@ class MainActivity : AppCompatActivity() {
 
     fun reset(view: View) {
         count =0
-        textView.setText(count.toString())
+        textView.text = count.toString()
     }
 
     fun plusOne(view: View) {
         count ++
-        textView.setText(count.toString())
+        //textView.setText(count.toString()) Old school :)
+        textView.text = count.toString()
 
     }
 
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
       textView  = findViewById<TextView>(R.id.textView)
-        textView.setText("hello fam")
+        textView.text = "0"
 
         }
 
